@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height:70px;
+    background-color: rgba(5, 162, 162, 0.79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+header a{
+    text-decoration: none;
+}
+
+li{
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    position: relative;
+    display: block;
+    transition: .5s;
+}
+li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: red;
+}
+li:hover{
+    color:white;
+}
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+#section-first{
+    height: 760px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-first .botao-a{
+    margin: 15px;
+    width: 300px;
+    height: 50px;
+    background: white;
+    border-radius: 35px;
+    text-decoration: none;
+    color: black;
+    border: 0;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    cursor: pointer;
+    transition: .5s;
+}
+
+#section-first .botao-a:hover{
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0px 0px 20px 5px rgb(0, 81, 255);
+
+}
+
+#section-first .botao-b{
+    margin: 15px;
+    width: 450px;
+    height: 50px;
+    background: rgb(207, 0, 0);
+    border-radius: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    cursor: pointer;
+    border: 0;
+    transition: .5s;
+}
+#section-first .botao-b:hover{
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: 0px 0px 20px 10px red;
+    color: red;
+    background-color: black;
+}
+
+#section-sobre{
+    width: 100%;
+    height: 760px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-sobre{
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 100px;
+    border-radius: 50px;
+}
+#section-sobre h2{
+    width: 500px;
+    text-align: center;
+    margin: 100px;
+}
+
+
+#section-suporte{
+    width: 100%;
+    height: 760px;
+    background-color: aqua;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+#section-suporte{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-user{
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
