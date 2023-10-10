@@ -23,6 +23,7 @@
     height: 400px;
     box-shadow: 6px 6px 10px 1px rgb(53, 53, 53);
     position: relative;
+
 }
 
 
@@ -110,14 +111,23 @@
 }
 
 .name-desenvolvedores{
+    margin-left: 5%;
     text-align: center;
-    width: 200px;
+    width: 300px;
     height: 40px;
-    background-color: #fff;
+    background-color: #ff0000;
+    margin-top: 50px;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 0 0 5px 10px rgb(7, 7, 7);
 }
+
 .name-suporte{
     text-align: center;
     width: 100px;
     height: 40px;
     background-color: #fff;
+}
+
+#section-desenvolvedores:hover .name-desenvolvedores{
+    box-shadow: 0 0 5px 10px rgb(255, 255, 255);
 }
