@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html, body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
 header{
     width: 100%;
@@ -65,9 +53,49 @@ li:hover::after{
     height: 760px;
     width: 100%;
     background-image: url(../img/fundo.png);
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+:root, :root:lang(bg), :root:lang(el), :root:lang(ru), :root:lang(uk)
+{
+    --font-primary: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-display: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
+
+:root {
+    --font-headline: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-first .conteudo h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-headline);
+    font-weight: 900;
+    font-size: 44px;
+    font-size: clamp(24px,5vw,44px);
+    line-height: 95%;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+}
+
+#section-first .conteudo p{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    width: 650px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    margin-left: 45px;
+    justify-content: center;
+    text-wrap: inherit;
+    text-align: center;
 }
 
 #section-first .botao-a{
@@ -79,8 +107,8 @@ li:hover::after{
     text-decoration: none;
     color: black;
     border: 0;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 17px;
+    font-weight: 700;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
     cursor: pointer;
     transition: .5s;
@@ -89,7 +117,7 @@ li:hover::after{
 #section-first .botao-a:hover{
     transform: scale(1.05);
     transition: .5s;
-    box-shadow: 0px 0px 20px 5px rgb(0, 81, 255);
+    box-shadow: 0px 0px 15px 5px rgb(0, 81, 255);
 
 }
 
@@ -101,8 +129,8 @@ li:hover::after{
     border-radius: 35px;
     text-decoration: none;
     color: white;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 17px;
+    font-weight: 700;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
     cursor: pointer;
     border: 0;
@@ -111,7 +139,7 @@ li:hover::after{
 #section-first .botao-b:hover{
     transform: scale(1.05);
     transition: .5s;
-    box-shadow: 0px 0px 20px 10px red;
+    box-shadow: 0px 0px 15px 10px red;
     color: red;
     background-color: black;
 }
@@ -136,7 +164,6 @@ li:hover::after{
     text-align: center;
     margin: 100px;
 }
-
 
 #section-suporte{
     width: 100%;
