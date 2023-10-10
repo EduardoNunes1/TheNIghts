@@ -119,7 +119,7 @@ li:hover::after{
 #section-sobre{
     width: 100%;
     height: 760px;
-    background-color: rgb(188, 0, 0);
+    background-color: rgb(14, 14, 14);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +141,7 @@ li:hover::after{
 #section-suporte{
     width: 100%;
     height: 760px;
-    background-color: aqua;
+    background-color: rgb(35, 35, 35);
 }
 
 footer{
