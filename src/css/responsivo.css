@@ -1,5 +1,207 @@
 @media (max-width: 769px) {
+    #section-first{
+        width: 769px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #section-first .botoes{
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-first .conteudo h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-headline);
+        font-weight: 900;
+        font-size: 25px;
+        font-size: clamp(24px,5vw,25px);
+        line-height: 75%;
+        text-transform: uppercase;
+        text-rendering: geometricPrecision;
+    }
     
+    #section-first .conteudo p{
+        margin-top: 50px;
+        margin-bottom: 80px;
+        width: 550px;
+        color: white;
+        font-weight: 400;
+        font-size: 15px;
+        display: flex;
+        margin-left: 45px;
+        justify-content: center;
+        text-wrap: inherit;
+        text-align: center;
+    }
+
+    #section-first .botao-a{
+        margin: 15px;
+        width: 200px;
+        height: 50px;
+        background: white;
+        border-radius: 35px;
+        text-decoration: none;
+        color: black;
+        border: 0;
+        font-size: 15px;
+        font-weight: 700;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    #section-first .botao-a:hover{
+        transform: scale(1.05);
+        transition: .5s;
+        box-shadow: 0px 0px 15px 5px rgb(255, 0, 0);
+    }
+    
+    #section-first .botao-b{
+        margin: 15px;
+        width: 300px;
+        height: 50px;
+        background: rgb(207, 0, 0);
+        border-radius: 35px;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        cursor: pointer;
+        border: 0;
+        transition: .5s;
+    }
+    
+    #section-first .botao-b:hover{
+        transform: scale(1.05);
+        transition: .5s;
+        box-shadow: 0px 0px 15px 10px red;
+        color: red;
+        background-color: black;
+    }
+
+    #section-sobre{
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(11, 11, 11);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-sobre{
+        width: 370px;
+        height: 370px;
+        border: 5px solid rgb(0, 0, 0);
+        box-shadow: 0 0 2.5px 5px rgba(0,0,0,0.4);
+        margin: 50px;
+        border-radius: 50px;
+        margin-bottom: 15px;
+    }
+
+    .container-sobre img{
+        width: 100%;
+        height: 370px;
+    }
+    
+    #section-sobre h2{
+        width: 400px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 100px;
+        color: white;
+    }
+
+    #section-desenvolvedores{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/fundo-2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    #section-desenvolvedores .cartao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #section-suporte{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(11, 11, 11);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #section-suporte .cartao-2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #section-final{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(11, 11, 11);
+    }
+    
+    #section-final .texto-final{
+        padding: 15px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-headline);
+        font-weight: 900;
+        font-size: 10px;
+        font-size: clamp(16px,5vw,20px);
+        line-height: 95%;
+        text-transform: uppercase;
+        text-rendering: geometricPrecision;
+    }
+    
+    #section-final .botao-b{
+        margin: 15px;
+        width: 300px;
+        height: 50px;
+        background: rgb(207, 0, 0);
+        border-radius: 35px;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        cursor: pointer;
+        border: 0;
+        transition: .5s;
+    }
 }
 
 @media (max-width: 425px) {
