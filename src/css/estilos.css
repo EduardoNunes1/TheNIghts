@@ -316,3 +316,20 @@ body{
     height: 50px;
     background-color: rgb(11, 11, 11);
 }
+
+/* Estilo para o controle de áudio */
+audio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    width: 90px;
+    background: transparent;
+  }
+  
+  /* Adicione uma sombra ao controle de áudio para torná-lo mais visível */
+  audio::-webkit-media-controls-panel {
+    background: transparent;
+  }
