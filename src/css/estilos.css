@@ -327,6 +327,7 @@ audio {
     margin: 20px;
     width: 90px;
     background: transparent;
+    z-index: 2;
   }
   
   /* Adicione uma sombra ao controle de áudio para torná-lo mais visível */
